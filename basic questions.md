@@ -27,7 +27,7 @@ on pizzas.pizza_id = order_details.pizza_id
 group by pizzas.size order by order_count desc;
 
 
---  List the top 5 most ordered pizza types along with their quantities.
+**List the top 5 most ordered pizza types along with their quantities.**
 
 select pizza_types.name, sum(order_details.quantity) as quantity_of_pizza
 from pizza_types join pizzas
